@@ -1,0 +1,46 @@
+.btn {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #A4DDED;
+    padding: 6px 6px 0px 6px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.controls {
+    height: 80px;
+    width: 80px;
+    padding: 20px;
+    /* background: #FFFFFF; */
+}
+
+.StatusContainer {
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    /* white-space: nowrap; */
+}
+
+section {
+    text-align: center;
+    -webkit-filter: grayscale(100%);  /* safari/chrome */
+    -moz-filter: grayscale(100%); /* firefox */
+    -ms-filter: grayscale(100%);  /* IE >= 9 */
+    -o-filter: grayscale(100%); /* Opera, if support CSS3 */
+    filter: gray; filter: grayscale(100%); /* edge browsers */ 
+}
+
+.ui-slider-input {
+    display : none !important;
+}
+
+@media only screen and (min-width: 1000px) {
+    
+}

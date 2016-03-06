@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: PTSans,Arial,Helvetica,sans-serif;
+}
+
+header {
+    background-color: #009EDA;
+    padding: 0 0 0 0;
+    color: white;
+}
+
+header > .header_inner {
+    padding: 15px 15px 0px 15px;
+    
+}
+
+.header_inner > h1 {
+    float: right;
+    width: 40%;
+    padding: 0px;
+    text-align: right;
+    font-size: 4vw;
+}
+
+#header_tree {
+    position: relative;
+    left: -6vw;
+    height:10vh;
+}
+
+#header_pwm {
+    height:12vh;
+}
+
+
+
+header:after {
+    content: "";
+    width: 100%;
+    /* background: url(resources/flags.png) 5px 0 repeat-x; */
+    display: inline-block;
+    border-bottom: 5px solid #0A5B79;
+    height: 11px;
+    z-index: 2;
+    position: relative;
+    bottom: -5px;
+}
+
+section {
+    margin: 20px;
+    min-height: 80%;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    #header_tree {
+        height: 14vh;
+        left: -8vh;
+    }
+    #header_pwm {
+        height: 16vh;
+    }
+    .header_inner > h1 {
+        float: right;
+        width: 40%;
+        padding: 20px;
+        text-align: right;
+        font-size: 4vw;
+    }
+}

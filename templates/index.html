@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pulse Width Modulated Xmas Tree</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"> 
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="img/tree.png">
+    <link href="{{ url_for('static', filename='css/header.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/pwmtree.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<header>
+    <div class="header_inner">
+        <img src="{{ url_for('static', filename='img/pwm.png') }}" id="header_pwm" />
+        <img src="{{ url_for('static', filename='img/tree.png') }}" id="header_tree" />
+        <h1>PWM Xmas Tree</h1>
+    </div>
+</header>
+<section>
+    <div class="StatusContainer">
+        <button id="LightsOnButton" class="btn"><img src="{{ url_for('static', filename='img/torch-on.svg') }}" class="controls" /></button>
+        <button id="LightsOffButton" class="btn"><img src="{{ url_for('static', filename='img/torch-off.svg') }}" class="controls" /></button>
+    </div>
+    <div class="StatusContainer">
+        <!-- <input type="range" name="points" id="points" value="50" min="0" step="10" max="100"> -->
+        <button id="DimLightsButton" class="btn"><img src="{{ url_for('static', filename='img/brightness-brighten.svg') }}" class="controls" /></button>
+        <button id="VeryDimLightsButton" class="btn"><img src="{{ url_for('static', filename='img/brightness-darken.svg') }}" class="controls" /></button>      
+    </div>
+    <div class="StatusContainer">
+        <button id="BlinkLightsButton" class="btn"><img src="{{ url_for('static', filename='img/blink.svg') }}" class="controls" /></button>
+        <button id="PingPongButton" class="btn"><img src="{{ url_for('static', filename='img/pingpong.svg') }}" class="controls" /></button>
+    </div>
+    <div class="StatusContainer">
+        <button id="TrainStopButton" class="btn"><img src="{{ url_for('static', filename='img/stop.svg') }}" class="controls" /></button>
+        <button id="TrainFastButton" class="btn"><img src="{{ url_for('static', filename='img/fast-forward.svg') }}" class="controls" /></button>
+    </div>
+    <div class="StatusContainer">
+        <button id="TrainReverseButton" class="btn"><img src="{{ url_for('static', filename='img/reverse.svg') }}" class="controls" /></button>
+        <button id="TrainSlowButton" class="btn"><img src="{{ url_for('static', filename='img/slow-forward.svg') }}" class="controls" /></button>
+    </div>
+</section>
+<footer>
+</footer>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="{{ url_for('static', filename='js/pwmtree.js') }}"></script>
+</body>
+</html>

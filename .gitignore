@@ -1,0 +1,8 @@
+__pycache__/
+pwmtree.pyproj
+pwmtree.pyproj.user
+web-server_old.py
+remote.py
+*.pyc
+logs/*
+.vs/*
